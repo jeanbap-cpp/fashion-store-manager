@@ -1,0 +1,3 @@
+1;Ngo Manh Tri;22/3/2006;0982599731;ngotrydz@gmail.com;nhan vien
+2;Thai Viet Dinh Hien;1/1/2006;0911111111;dinhhien@gmail.com;nhan vien
+3;Doan Minh Tri;24/4/2006;0911111111;ericdoan2006@gmai.com;nhan vien

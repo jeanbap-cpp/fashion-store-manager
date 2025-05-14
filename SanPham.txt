@@ -1,0 +1,4 @@
+1;baggy jeans;pants;S M L XL;denim;blue black white;550;500
+2;double knee;pants;S M L XL;canvas;yellow white;480;430
+3;destroy jacket;jacket;S M L XL;canvas;yellow black;790;740
+4;trucker hat;hat;free;poliester;red yellow black white green blue;200;150
