@@ -139,11 +139,11 @@ class Nguoi{ //đây là class người chính
             cout<<"Nhap so dien thoai: "; getline(cin, SDT);
             cout<<"Nhap email: "; getline(cin, Email);
             cout<<"Nhap chuc vu: "; getline(cin, ChucVu);
-            cin.ignore();
             return true;
         }
 
         void HienThiThongTin() const{
+            cout<<"-----------------------------"<<"\n";
             cout<<"Ma nhan vien: "<<MaNhanVien<<"\n";
             cout<<"Ho va ten: "<<HoTen<<"\n";
             cout<<"Ngay thang nam sinh: "<<NgaySinh<<"\n";
@@ -189,7 +189,7 @@ class NhanVien:public Nguoi{ //class con kế thừa của class người
             }
 
             string line1; //line dùng để lưu từ dòng đọc được từ file
-            cout<<"--- Danh sach nhan vien ---"<<endl;
+            cout<<"---- Danh sach nhan vien ----"<<endl;
 
             while(getline(file1, line1)){ // đọc từng dòng của file sanpham
                 if(line1.empty()){continue;} //bỏ qua dòng trống
@@ -266,9 +266,9 @@ class DoanhThuNgay:public DoanhThu{
     private:
         string NgayThongKe;
     public:
-        DoanhThuNgay():DoanhThu(0, 0, 0, 0), NgayThongKe("Chua xac dinh."){}
+        DoanhThuNgay():DoanhThu(0, 0, 0, 0), NgayThongKe("Chua xac dinh."){}//khởi tạo các constructor có thông tin của lớp cha với các giá trị là 0
         DoanhThuNgay(string Ngay, int HoaDon, int SanPham, float Doanhthu, float GiamGia):
-            DoanhThu(HoaDon, SanPham, Doanhthu, GiamGia), NgayThongKe(Ngay){}
+            DoanhThu(HoaDon, SanPham, Doanhthu, GiamGia), NgayThongKe(Ngay){}//cho phép khởi tạo các thông tin trong thời gian cụ thể 
     
     void HienThiThongTinDoanhThuNgay() const{
         cout<<"--- Doanh thu theo ngay ---"<<"\n";
@@ -296,9 +296,9 @@ class DoanhThuNam:public DoanhThu{
     private:
         string NamThongKe;
     public:
-        DoanhThuNam():DoanhThu(0, 0, 0, 0), NamThongKe("Chua xac dinh."){}
+        DoanhThuNam():DoanhThu(0, 0, 0, 0), NamThongKe("Chua xac dinh."){}//khởi tạo các constructor có thông tin của lớp cha với các giá trị là 0
         DoanhThuNam(string Nam, int HoaDon, int SanPham, float Doanhthu, float GiamGia):
-            DoanhThu(HoaDon, SanPham, Doanhthu, GiamGia), NamThongKe(Nam){}
+            DoanhThu(HoaDon, SanPham, Doanhthu, GiamGia), NamThongKe(Nam){}//cho phép khởi tạo các thông tin trong thời gian cụ thể 
     
     void HienThiThongTinDoanhThuNam() const{
         cout<<"--- Doanh thu theo nam ---"<<"\n";
@@ -315,24 +315,28 @@ int main(){
     DoanhThuNam dtnam;
         int luaChon;
         do{
-            cout<<"\n======= MENU QUAN LY SAN PHAM =======\n";
-            cout<<"1. Hien thi danh sach san pham\n";
-            cout<<"2. Them san pham moi\n";
-            cout<<"3. Nhap thong tin nhan vien\n";
-            cout<<"4. Hien thi thong tin nhan vien\n";
-            cout<<"5. Hien thi doanh thu theo ngay\n";
-            cout<<"6. Hien thi doanh thu theo thang\n";
-            cout<<"7. Hien thi doanh thu theo nam\n";
-            cout<<"0. Thoat\n";
-            cout<<"Nhap lua chon: ";
-            cin>> luaChon;
+            cout<<"\n|========= MENU QUAN LY CUA HANG =========|\n";
+            cout<<"|------------ QUAN LY SAN PHAM -----------|\n";
+            cout<<"|1. Nhap them san pham moi                |\n";
+            cout<<"|2. Hien thi danh sach san pham           |\n";
+            cout<<"|----------- QUAN LY NHAN VIEN -----------|\n";
+            cout<<"|3. Nhap thong tin nhan vien              |\n";
+            cout<<"|4. Hien thi thong tin nhan vien          |\n";
+            cout<<"|----------- QUAN LY DOANH THU -----------|\n";
+            cout<<"|5. Hien thi doanh thu theo ngay          |\n";
+            cout<<"|6. Hien thi doanh thu theo thang         |\n";
+            cout<<"|7. Hien thi doanh thu theo nam           |\n";
+            cout<<"|-----------------------------------------|\n";
+            cout<<"|0. Thoat|\n";
+
+            cout<<"Nhap lua chon: "; cin>>luaChon;
 
             switch(luaChon){
                 case 1:
-                    ql.HienThiSanPhamTuFile();
+                    ql.ThemSanPhamVaoFile();
                     break;
                 case 2:
-                    ql.ThemSanPhamVaoFile();
+                    ql.HienThiSanPhamTuFile();
                     break;
                 case 3:
                     nv.ThemNhanVienVaoFile();
