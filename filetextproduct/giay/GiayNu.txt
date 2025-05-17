@@ -1,0 +1,13 @@
+1;NewBalance1906r;35 36 37 38 39;chat lieu tong hop;gold, silver, blue, green, v.v;2800.000;2600.000
+2;OnitsukaTeiger;35 36 37 38 39;PU leather;red, blue, green, v.v;1500.000;1200.000
+3;TimberlandBoots;35 36 37 38 39;Nubuck Leather;yellow, black;2000.000;1800.000
+4;VansCheckerBoard;35 36 37 38 39;canvas,one color;900.000;800.000
+5;VansOldSkool;35 36 37 38 39;canvas;all color;900.000;800.000
+6;ConverseClassic;35 36 37 38 39;canvas;all color;900.000;800.000
+7;AdidasSuperstar;35 36 37 38 39;Nhieu chat lieu;all color;3100.000;2900.000
+8;AdidasGazzele;35 36 37 38 39;Nhieu chat lieu;all color;3100.000;2900.000
+9;NikeAirMax;35 36 37 38 39;Nhieu chat lieu;all color;3100.000;2900.000
+10;NikeDunkHigh;35 36 37 38 39;Nhieu chat lieu;all color;4000.000;3800.000
+11;Loafer;35 36 37 38 39;cow leather;black, brown;5000.000;4800.000
+12;HighHeels;35 36 37 38 39;Nhieu chat lieu;black, white, red;1500.000;1300.000
+13;SquareToe;35 36 37 38 39;Nhieu chat lieu;black, white, red;1000.000;800.000

@@ -1,0 +1,8 @@
+1;CargoShorts;28 29 30 31 32;khaki;yellow, black, white;360.000;310.000
+2;JeansShorts;28 29 30 31 32;denim;blue, dark blue, black, white;360.000;310.000
+3;StraightJeans;28 29 30 31 32;denim;blue, dark blue, black;500.000;450.000
+4;WideLegJeans;28 29 30 31 32;denim;blue, dark blue, black, white;570.000;520.000
+5;WideLegPants;28 29 30 31 32;khaki;yellow, black;490.000;440.000
+6;BaggyJeans;28 29 30 31 32;denim;blue, dark blue, black;600.000;550.000
+7;Trousers;28 29 30 31 32;wool;brown, grey, black, dark blue;720.000;670.000
+8;SweatePants;28 29 30 31 32;fleece;grey, white;300.000;250.000

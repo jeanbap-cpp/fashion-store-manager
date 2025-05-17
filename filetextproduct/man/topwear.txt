@@ -1,0 +1,12 @@
+1;CropTee;S M L XL;cotton;white, black;300,000;250.000
+2;TankTop;S M L XL;cotton;white, black;200.000;150.000
+3;shirt;S M L XL;cotton;white, black;450.000;400.000
+4;OversizeTshirt;M L;cotton;all color;350.000;300.000
+5;GraphicTshirt;S M L XL;cotton;one color;500.000;450.000
+6;Sweater;M L XL;All color;fleece;480.000;430.000
+7;Cardigan;M L XL;thin fleece;Dark blue, black;480.000;430.000
+8;Hoodie;M L XL;thick fleece;all color;500.000;450.000
+9;LeatherJacket;M L XL;cow leather;black, brown;1500.000;1350.000
+10;DestroyJacket;M L XL;heavy canvas;yellow, black;800.000;750.000
+11;DenimJacket;M L XL;denim;light blue, dark blue, black;750.000;700.000
+12;Blazer;L XL;wool;black;1000.000;900.000
