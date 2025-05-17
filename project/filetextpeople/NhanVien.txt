@@ -1,0 +1,6 @@
+1;Ngo Manh Tri;22/3/2006;0982599731;ngotrydz@gmail.com;nhan vien
+2;Thai Viet Dinh Hien;1/1/2006;0911111111;dinhhien@gmail.com;nhan vien
+3;Doan Minh Tri;24/4/2006;0911111111;ericdoan2006@gmai.com;nhan vien
+4;Tran Van Sy Hung;1/6/2006;0922222222;TranHung@gmail.com;Nhan vien
+5;Nguyen Gia Khang;1/11/2006;0933333333;khang@gmail.com;Nhan vien
+6;Le Hong Anh;10/1/2006;0933333333;HAnh@gmail.com;Nhan vien

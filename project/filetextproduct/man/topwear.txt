@@ -1,0 +1,1 @@
+1;destroy jacket;S M L XL;canvas;black yellow white;750;700

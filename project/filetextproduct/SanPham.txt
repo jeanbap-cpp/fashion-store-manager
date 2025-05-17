@@ -1,0 +1,7 @@
+1;baggy jeans;pants;S M L XL;denim;blue black white;550;500
+2;double knee;pants;S M L XL;canvas;yellow white;480;430
+3;destroy jacket;jacket;S M L XL;canvas;yellow black;790;740
+4;trucker hat;hat;free;poliester;red yellow black white green blue;200;150
+5;shirt;shirt;S M L XL;linen;white black red;400;350
+6;wash tee;tee shirt;S M L XL;cotton;faded black;400;350
+7;oakley backpack;backpack;one size;poliester, cotton, nilon;black;800;750
