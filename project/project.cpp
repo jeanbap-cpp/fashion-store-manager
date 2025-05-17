@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -47,58 +48,8 @@ public:
     return true;
     }
 
-    void GhiVaoFile1(fstream &filetopwearnam) const{
+    void GhiVaoFile(fstream &filetopwearnam) const{
         filetopwearnam<<MaSanPham<<";"
-            <<TenSanPham<<";"
-            <<Size<<";"
-            <<ChatLieu<<";"
-            <<MauSac<<";"
-            <<GiaBan<<";"
-            <<GiaNhap<<"\n";
-    }
-
-    void GhiVaoFile2(fstream &filebottomwearnam) const{
-        filebottomwearnam<<MaSanPham<<";"
-            <<TenSanPham<<";"
-            <<Size<<";"
-            <<ChatLieu<<";"
-            <<MauSac<<";"
-            <<GiaBan<<";"
-            <<GiaNhap<<"\n";
-    }
-
-    void GhiVaoFile3(fstream &filetopwearnu) const{
-        filetopwearnu<<MaSanPham<<";"
-            <<TenSanPham<<";"
-            <<Size<<";"
-            <<ChatLieu<<";"
-            <<MauSac<<";"
-            <<GiaBan<<";"
-            <<GiaNhap<<"\n";
-    }
-
-    void GhiVaoFile4(fstream &filebottomwearnu) const{
-        filebottomwearnu<<MaSanPham<<";"
-            <<TenSanPham<<";"
-            <<Size<<";"
-            <<ChatLieu<<";"
-            <<MauSac<<";"
-            <<GiaBan<<";"
-            <<GiaNhap<<"\n";
-    }
-
-    void GhiVaoFile5(fstream &filegiaynam) const{
-        filegiaynam<<MaSanPham<<";"
-            <<TenSanPham<<";"
-            <<Size<<";"
-            <<ChatLieu<<";"
-            <<MauSac<<";"
-            <<GiaBan<<";"
-            <<GiaNhap<<"\n";
-    }
-
-    void GhiVaoFile6(fstream &filegiaynu) const{
-        filegiaynu<<MaSanPham<<";"
             <<TenSanPham<<";"
             <<Size<<";"
             <<ChatLieu<<";"
@@ -111,7 +62,7 @@ public:
         cout<<"Ma: "<<MaSanPham<<" | Ten: " <<TenSanPham
             <<" | Size: "<<Size
             <<" | Chat lieu: "<< ChatLieu<<" | Mau sac: "<<MauSac
-            <<" | Gia ban: "<<GiaBan<<" | Gia nhap: "<<GiaNhap<<"\n";
+            <<" | Gia ban: "<<fixed<<setprecision(3)<<GiaBan<<" | Gia nhap: "<<fixed<<setprecision(3)<<GiaNhap<<"\n";
     }
 };
 
@@ -127,7 +78,7 @@ public:
             return;
         }
 
-        sp.GhiVaoFile1(filetopwearnam); //lưu dữ liệu đã nhập vào file
+        sp.GhiVaoFile(filetopwearnam); //lưu dữ liệu đã nhập vào file
         filetopwearnam.close();
         cout<<"==> Da luu san pham vao file!"<<endl;
     }
@@ -170,7 +121,7 @@ public:
             return;
         }
 
-        sp.GhiVaoFile2(filebottomwearnam); //lưu dữ liệu đã nhập vào file
+        sp.GhiVaoFile(filebottomwearnam); //lưu dữ liệu đã nhập vào file
         filebottomwearnam.close();
         cout<<"==> Da luu san pham vao file!"<<endl;
     }
@@ -213,7 +164,7 @@ void ThemSanPhamtopwearnuVaoFile(){
             return;
         }
 
-        sp.GhiVaoFile3(filetopwearnu); //lưu dữ liệu đã nhập vào file
+        sp.GhiVaoFile(filetopwearnu); //lưu dữ liệu đã nhập vào file
         filetopwearnu.close();
         cout<<"==> Da luu san pham vao file!"<<endl;
     }
@@ -256,7 +207,7 @@ void ThemSanPhamtopwearnuVaoFile(){
             return;
         }
 
-        sp.GhiVaoFile4(filebottomwearnu); //lưu dữ liệu đã nhập vào file
+        sp.GhiVaoFile(filebottomwearnu); //lưu dữ liệu đã nhập vào file
         filebottomwearnu.close();
         cout<<"==> Da luu san pham vao file!"<<endl;
     }
@@ -299,7 +250,7 @@ void ThemSanPhamtopwearnuVaoFile(){
             return;
         }
 
-        sp.GhiVaoFile5(filegiaynam); //lưu dữ liệu đã nhập vào file
+        sp.GhiVaoFile(filegiaynam); //lưu dữ liệu đã nhập vào file
         filegiaynam.close();
         cout<<"==> Da luu san pham vao file!"<<endl;
     }
@@ -342,7 +293,7 @@ void ThemSanPhamtopwearnuVaoFile(){
             return;
         }
 
-        sp.GhiVaoFile6(filegiaynu); //lưu dữ liệu đã nhập vào file
+        sp.GhiVaoFile(filegiaynu); //lưu dữ liệu đã nhập vào file
         filegiaynu.close();
         cout<<"==> Da luu san pham vao file!"<<endl;
     }
@@ -751,7 +702,7 @@ int main(){
                             cout<<"|3. Them topwear                        |\n";
                             cout<<"|4. Them bottomwear                     |\n";
                             cout<<"|---------------------------------------|\n";
-                            cout<<"|0. Thoat|\n";
+                            cout<<"|0. Ve menu chinh|\n";
 
                             cout<<"Nhap lua chon: "; cin>>stt;
                             switch(stt){
@@ -785,7 +736,7 @@ int main(){
                             cout<<"|3. Them topwear                        |\n";
                             cout<<"|4. Them bottomwear                     |\n";
                             cout<<"|---------------------------------------|\n";
-                            cout<<"|0. Thoat|\n";
+                            cout<<"|0. Ve menu chinh|\n";
 
                             cout<<"Nhap lua chon: "; cin>>STT;
                             switch(STT){
@@ -819,7 +770,7 @@ int main(){
                             cout<<"|3. Them giay nam               |\n";
                             cout<<"|4. Them giay nu               |\n";
                             cout<<"|-------------------------------|\n";
-                            cout<<"|0. Thoat|\n";
+                            cout<<"|0. Ve menu chinh|\n";
 
                             cout<<"Nhap lua chon: "; cin>>StT;
                             switch(StT){
